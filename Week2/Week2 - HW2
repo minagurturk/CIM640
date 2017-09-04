@@ -2,6 +2,13 @@
 
 <html>
 
+<head>
+
+<title> My Calculator </title>
+
+</head>
+
+
 <body>
 
 <script>
@@ -15,6 +22,15 @@ console.log (addition);
 
 addNumber (3,3);
 addNumber (3,8);
+
+
+ function addReturn (add1,add2){
+ var addition = add1,add2;
+ return addition;
+ 
+ }
+ 
+console.log (addReturn (3,3));
 
 </script>
 
