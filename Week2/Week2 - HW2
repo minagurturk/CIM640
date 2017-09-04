@@ -1,0 +1,9 @@
+function addNumber (add1,add2) {
+
+var addition = add1,add2;
+console.log (addition);
+
+}
+
+addNumber (3,3);
+addNumber (3,8);
