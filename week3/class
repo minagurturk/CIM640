@@ -35,6 +35,12 @@ lickRatio = Math.round ()
 // saying how much you have gone
 var message "You gave gone: " + liclRatio + "% of the way!";
 console.log (message);
+
+
+// finding and getting div output inserting inside html
+
+var outputText = document.getElementbyId ("output");
+outputText.innerHTML = message;
 }
 
 var averageLicks = 252;
