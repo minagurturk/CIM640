@@ -1,0 +1,48 @@
+<body>
+
+<form>
+
+<label for= "licks" > Enter number of licks </label>
+<input type="text" name="firstname" id="firstname">
+<br> <br>
+<button type="button id="lButton">Enter Licks </button>
+
+</form>
+
+<div id="output"></div>
+
+<script>
+
+
+//your button should work with the function
+function centerofPop(){
+//console.log ("this is working");
+
+//find id element and give me the value , grab the value and pass it
+var licksAmount = document.getElementById("links").value;
+
+console.log ("licks amount: " + licksamount);
+
+var lickRatio = licksAmount/averageLicks * 100
+
+//to see that our calculation is correct
+console.log (lickRatio)
+
+
+//if the number ic close to 40, will equate to the lick ratio, should be 40
+lickRatio = Math.round ()
+
+}
+
+var averageLicks = 252;
+
+var getButton = documentgetElementById ("lButton");
+
+// two parameters, first event you want to trigger
+// fire off the function on click
+
+getButton.addEventListener"click", centerOfPop);
+
+<script/>
+
+</body>
