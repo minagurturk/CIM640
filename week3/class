@@ -32,6 +32,9 @@ console.log (lickRatio)
 //if the number ic close to 40, will equate to the lick ratio, should be 40
 lickRatio = Math.round ()
 
+// saying how much you have gone
+var message "You gave gone: " + liclRatio + "% of the way!";
+console.log (message);
 }
 
 var averageLicks = 252;
