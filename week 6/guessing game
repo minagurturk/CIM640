@@ -1,0 +1,26 @@
+<title> guessing Game </title>
+
+<h1> guessing game
+
+<p> <i> Choose a number between 1 - 10 </i> </p>
+
+<form>
+<label for="guessInput"> Enter number: </label>
+<input type="text" name="guessInput" id="guessInput">
+<button type= "button" name="guessButton" >Guess!</button>
+</form>
+
+<script>
+
+function checkAnswer() {
+console.log("It is working")
+
+}
+
+
+//access to button object
+var guessButton = document.getElementById("guessButton");
+
+guessButton.addEventListener("click", checkAnswer);
+
+</script>
