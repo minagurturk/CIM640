@@ -47,6 +47,21 @@ console.log ("Try Again");
 // add output to see it , not in console
 //action
 output.innerHTML = "Try Again";
+}
+
+//if (guess==answer) {
+output.innerHTML = "you guessed correct";
+
+} else if (guess<answer){
+//if this is correct it doesn't check the rest
+output.innerHTML = "You are too low";
+
+} else if (guess>answer) {
+output.innerHTML = "You are too high";
+} else {
+console.log ("try again")
+output.innerHTML = "try again";
+}
 
 }
 
