@@ -10,17 +10,54 @@
 <button type= "button" name="guessButton" >Guess!</button>
 </form>
 
+
+//output
+<div id="outputText> </div>
+
+
 <script>
 
 function checkAnswer() {
+
 console.log("It is working")
+
+//getting the value - dot value
+var guess = document.getElementById("guessInput").value;
+
+console.log(guess);
+
+//getting the answer
+var answer = 10;
+
+// variables are guess and answer
+//put comparison inside parantesis
+
+if (guess == answer) {
+//do something here 
+// only prints when you have the right answer
+//decision
+console.log ("You guessed correct");
+//action
+output.innerHTML = "You Guessed Correct";
+
+} else {
+// if the above statement is true, it will pass the statement below
+//either right or wrong there isn't any other answers
+console.log ("Try Again");
+// add output to see it , not in console
+//action
+output.innerHTML = "Try Again";
 
 }
 
+
+}
 
 //access to button object
 var guessButton = document.getElementById("guessButton");
 
 guessButton.addEventListener("click", checkAnswer);
 
+
+var output = document.getElementById ("outputText");
 </script>
