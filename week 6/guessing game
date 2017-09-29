@@ -26,8 +26,8 @@ var guess = document.getElementById("guessInput").value;
 
 console.log(guess);
 
-//getting the answer
-var answer = 10;
+//when you press the button
+
 
 // variables are guess and answer
 //put comparison inside parantesis
@@ -50,14 +50,20 @@ output.innerHTML = "Try Again";
 }
 
 //if (guess==answer) {
-output.innerHTML = "you guessed correct";
+output.innerHTML = "you guessed correct! A new number has been generated keep playing!";
 
-} else if (guess<answer){
+//math floor below
+answer = Math.floor(Math.random() *11);
+
+console.log (answer);
+
+} else if (guess<answer && guess >=0){
 //if this is correct it doesn't check the rest
 output.innerHTML = "You are too low";
 
-} else if (guess>answer) {
+} else if (guess>answer && guess <=10) {
 output.innerHTML = "You are too high";
+//if it is not a number put else
 } else {
 console.log ("try again")
 output.innerHTML = "try again";
@@ -75,4 +81,10 @@ guessButton.addEventListener("click", checkAnswer);
 
 
 var output = document.getElementById ("outputText");
+
+// the number is continously shifting
+// generating a random number then multiplying with 11
+//ouside the function because you don't want to generate it every single time
+var answer = Math.floor (Math.random () *11);
+console.log (answer);
 </script>
