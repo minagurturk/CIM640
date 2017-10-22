@@ -39,12 +39,30 @@ function draw() {
 
     
     //face
-    rect(centerX, centerY, 85, 98, 25);
+    rect(centerX, centerY, 85, 98, 25);  
     
+    //puppyface
+    //rect(centerX +300, centerY + 40, 55, 68, 15);
+    //puppynose
+    //fill(0);
+    //rect(centerX +300, centerY + 42, 10, 8,25);
+    //puppyeyes
+    //black
+    //fill(255);
+    //ellipse(centerX +285, centerY +34, 12, 15);
+    //ellipse(centerX + 314, centerY +34, 12, 15);
+    //white
+    //fill(0);
+    //ellipse(centerX +285, centerY +34, 8, 8);
+    //ellipse(centerX + 314, centerY +34, 8, 8);
+    //rectMode(CENTER);
+
 
     //nose
     fill(0);
     rect(centerX, centerY + 12, 10, 12,25);
+   
+    
     
     //eyes
     //black
@@ -86,19 +104,10 @@ function draw() {
 
 function mousePressed () {
     
-    DogColor = (232 , 200, 100);
-    TongueColor = (255, 0, 0);
+    dogColor = color(220 , 250, 100);
+    tongueColor = color(255, 0, 0);
     
     
 }
 
 
-
-
-function mouseReleased () {
-    
-    dogColor = (232,170,96);
-    tongueColor = (232,149,158);
-    
-    
-}
