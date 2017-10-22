@@ -2,13 +2,20 @@ var centerX = 300;
 var centerY = 300;
 
 var bgColor;
+var dogColor;
 
+var tongueColor;
 
 
 function setup() {
     createCanvas(800, 800);
     bgColor = color(255);
+    dogColor = color(232,170,96);
+    
+   tongueColor = color(232,149,158);
  
+    
+
 }
 
 function draw() {
@@ -17,7 +24,7 @@ function draw() {
     
     strokeWeight(1);
     stroke(0);
-    fill(232,170,96);
+    fill(dogColor);
     
     
     // front legs
@@ -32,18 +39,19 @@ function draw() {
 
     
     //face
-    fill(232,170,96);
     rect(centerX, centerY, 85, 98, 25);
+    
 
     //nose
     fill(0);
     rect(centerX, centerY + 12, 10, 12,25);
     
     //eyes
+    //black
     fill(255);
     ellipse(centerX - 13, centerY - 6, 15, 20);
     ellipse(centerX + 13, centerY - 6, 15, 20);
-
+    //white
     fill(0);
     ellipse(centerX - 13, centerY - 7, 8, 8);
     ellipse(centerX + 13, centerY - 7, 8, 8);
@@ -55,30 +63,42 @@ function draw() {
     fill(0);
     strokeWeight(2);
     rect(centerX, centerY + 30, 30, 5, 35);
+    
     //tongue
-    fill(232,149,158);
+    fill(tongueColor);
     rect(centerX , centerY + 41, 15, 30, 35);
     
     //tail 
-    stroke(232,170,96);
-    fill(232,170,96);
+    stroke(dogColor);
+    fill(dogColor);
     strokeWeight(1);
     rect(centerX + 103, centerY + 50, 25,10,200);
 
+    //ears
     noFill();
     arc(centerX, centerY-2, 120, 0, PI);
     strokeWeight(30);
-    stroke(232,170,96);
+    stroke(dogColor);
     arc(centerX, centerY-5, 100, 90, PI, TWO_PI);
     
     
+}
+
+function mousePressed () {
+    
+    DogColor = (232 , 200, 100);
+    TongueColor = (255, 0, 0);
+    
+    
+}
 
 
-    
- 
-    
-    
 
+
+function mouseReleased () {
+    
+    dogColor = (232,170,96);
+    tongueColor = (232,149,158);
     
     
 }
