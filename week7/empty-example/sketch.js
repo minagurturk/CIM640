@@ -16,13 +16,13 @@ var spot = {
  y : 800
 };
 
-
 function setup() {
     createCanvas(800, 800);
     bgColor = color(231,146,114);
     dogColor = color(232,170,96);
     
   tongueColor = color(232,149,158);
+    
  
     
 
@@ -32,13 +32,6 @@ function draw() {
 
     background(bgColor);
     
-     //snow
- frameRate(2);
- spot.x = random(0,width);
- spot.y = random(0,400);
- fill(255,10,10);
- noStroke();
- ellipse (spot.x, spot.y,10,10);
     
 
     
@@ -49,14 +42,17 @@ function draw() {
  //   }
     
 
-     
+        if (mouseY > 400) {
+    //night
+    background(0,0,255);
     
-if (mouseY > 400) {
-     
-      background(0,0,255);
-     
  }
-
+    
+    //grass
+    fill(0,255,0);
+    noStroke();
+    rect (400,520,800,300);
+    
     
     strokeWeight(1);
     stroke(0);
@@ -137,14 +133,19 @@ if (mouseY > 400) {
     arc(centerX, centerY-5, 100, 90, PI, TWO_PI);
     
  
+
+    
 }
 
 function mousePressed () {
     
-    dogColor = color(220 , 250, 100);
-    tongueColor = color(255,0,0);
-    
-    
+         //snow
+ frameRate(0.3);
+ spot.x = random(0,width);
+ spot.y = random(0,400);
+ fill(255);
+ noStroke();
+ ellipse (spot.x, spot.y,15,15);
 }
 
 
