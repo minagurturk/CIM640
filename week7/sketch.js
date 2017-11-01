@@ -32,3 +32,4 @@ function draw() {
         //posY++;
         posY = posY + 5;
     }
+}
