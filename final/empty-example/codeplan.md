@@ -1,5 +1,5 @@
 Breast Cancer / Health & Wealth Deck 
-To bring awareness to breast cancer, 6 ads will be placed in different parts of the screen as playing cards. Informational videos and stories will appear when the user clicks on some of the cards in the deck.
+To bring awareness to breast cancer, 6 ads will be designed and placed in different parts of the screen as playing cards. Informational videos and stories will appear when the user clicks on some of the cards in the deck.
 
 The design of the ads will be similar to playing cards to give a sense of gambling. 
 
